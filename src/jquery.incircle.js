@@ -1,10 +1,6 @@
 
 (function ( $ ) {
  
-    //$elements = $('li:not(:first-child)'),
-    //numberOfElements = (type === 1) ?  $elements.length : $elements.length - 1, //adj for even distro of elements when not full circle
-    //slice = 360 * type / numberOfElements;
- 
     $.fn.incircle = function(options) {
         
         // Default options.
