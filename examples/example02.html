@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Position Items Into Circle</title>  
+</head>
+<body>
+<div style="position:relative;width:500px;height:500px;background-color:red">
+<h2>Half Circle (Type .5 )</h2>
+<ul id="ex1">
+    <li>ex1 Center</li>
+    <li>ex1 Item 1</li>
+    <li>ex1 Item 2</li>
+    <li>ex1 Item 3</li>
+    <li>ex1 Item 4</li>
+    <li>ex1 Item 5</li>
+    <li>ex1 Item 6</li>
+    <li>ex1 Item 7</li>
+    <li>ex1 Item 8</li>
+</ul>
+</div>
+<div style="position:relative;width:500px;height:500px;background-color:yellow">
+<h2>Circle top 0px</h2>
+<ul id="ex2">
+    <li>ex2 Center</li>
+    <li>ex2 Item 1</li>
+    <li>ex2 Item 2</li>
+    <li>ex2 Item 3</li>
+    <li>ex2 Item 4</li>
+    <li>ex2 Item 5</li>
+    <li>ex2 Item 6</li>
+    <li>ex2 Item 7</li>
+    <li>ex2 Item 8</li>
+</ul>
+</div>
+<div style="position:relative;width:500px;height:500px;background-color:green">
+<h2>Circle</h2>
+<ul id="ex3">
+    <li>ex3 Center</li>
+    <li>ex3 Item 1</li>
+    <li>ex3 Item 2</li>
+    <li>ex3 Item 3</li>
+    <li>ex3 Item 4</li>
+    <li>ex3 Item 5</li>
+    <li>ex3 Item 6</li>
+    <li>ex3 Item 7</li>
+    <li>ex3 Item 8</li>
+</ul>
+</div>
+<div style="position:relative;width:500px;height:500px;background-color:green">
+<h2>Circle start 90°</h2>
+<ul id="ex4">
+    <li>ex4 Center</li>
+    <li>ex4 Item 1</li>
+    <li>ex4 Item 2</li>
+    <li>ex4 Item 3</li>
+    <li>ex4 Item 4</li>
+    <li>ex4 Item 5</li>
+    <li>ex4 Item 6</li>
+    <li>ex4 Item 7</li>
+    <li>ex4 Item 8</li>
+</ul>
+</div>
+</body>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="../src/jquery.incircle.js"></script>
+<script>
+$('#ex1').incircle({type: .5, start: 180});
+$('#ex2').incircle({top: '0px'});
+$('#ex3').incircle();
+$('#ex4').incircle({start: 90});
+</script>
+
+</html>
